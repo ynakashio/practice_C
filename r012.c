@@ -15,9 +15,15 @@ int main(){
 	scanf("%d",&suryo);
 
 	kingaku = tanka * suryo;
-	printf("\n原価は:%d",kingaku);
-
 	zeikomi = (float)kingaku * (1+zeikin);
+
+	/*
+	printf("\n原価は:%d",kingaku);
 	printf("\n税込み金額は:%f",zeikomi);
+
+	上の書き方はちょっと冗長、以下のが良い
+	*/
+
+	printf("原価は%d円,税込みは%f円",kingaku,zeikomi);
 
 }
