@@ -5,7 +5,7 @@ int main()
 	int kokugo,shakai,rika;
 	int goukei;
     float average;
-   
+
     /* raw_inputする変数がintの時は、&でアドレスを明示する
        */
 
@@ -21,7 +21,9 @@ int main()
     goukei = kokugo + shakai + rika;
     printf("\n合計は%d点",goukei);
 
-    
+    /*
+    途中で型変換するときは、(float)とかで指定する
+    */
     average = (float)goukei/3;
     printf("\n平均は%f",average);
 
